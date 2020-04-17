@@ -1,6 +1,11 @@
 <template>
   <div class="board bg-teal-700">
+   
+    <div class="column" style="border: 2px solid red; margin:20px auto" v-for="(column, key) in board.columns" :key="key">
+       {{ board }}
+    </div>
     <div class="flex flex-row items-start">
+      
       <!-- <BoardColumn
         v-for="(column, $columnIndex) of board.columns"
         :key="$columnIndex"
