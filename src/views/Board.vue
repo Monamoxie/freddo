@@ -1,15 +1,15 @@
 <template>
   <div class="board bg-teal-700">
     <div class="flex flex-row items-start">
-      <BoardColumn
+      <!-- <BoardColumn
         v-for="(column, $columnIndex) of board.columns"
         :key="$columnIndex"
         :column="column"
         :columnIndex="$columnIndex"
         :board="board"
-      />
+      /> -->
 
-      <div class="column flex">
+      <!-- <div class="column flex">
         <input
           type="text"
           class="p-2 mr-2 flex-grow"
@@ -17,7 +17,7 @@
           v-model="newColumnName"
           @keyup.enter="createColumn"
         >
-      </div>
+      </div> -->
     </div>
 
     <div
@@ -32,10 +32,10 @@
 
 <script>
 import { mapState } from 'vuex'
-import BoardColumn from '@/components/BoardColumn'
+// import BoardColumn from '@/components/BoardColumn'
 
 export default {
-  components: { BoardColumn },
+  // components: { BoardColumn },
   data () {
     return {
       newColumnName: ''
