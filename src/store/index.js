@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import defaultBoard from '../default-board'
+import defaultBoard from './modules/default-board'
 import { saveStatePlugin } from '../utils'
 
 Vue.use(Vuex)
