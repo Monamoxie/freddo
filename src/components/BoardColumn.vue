@@ -71,4 +71,7 @@ export default {
   @apply p-2 mr-4 text-left shadow rounded;
   min-width: 350px;
 }
+.list-reset {
+   /* position: relative; */
+}
 </style>

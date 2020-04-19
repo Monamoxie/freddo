@@ -1,9 +1,9 @@
 <template>
-  <AppDrop
+  <AppDrop  style="border:2px solid red"
     @drop="moveTaskOrColumn"
   >
     <AppDrag
-      class="task text-grey-darkest"
+      class="task text-grey-900"
       :transferData="{
         type: 'task',
         fromColumnIndex: columnIndex,
@@ -42,8 +42,10 @@ export default {
       required: true
     }
   },
+ 
   methods: {
     goToTask (task) {
+      alert('dddddddd')
       this.$router.push({ name: 'task', params: { id: task.id } })
     }
   }
@@ -53,5 +55,10 @@ export default {
 <style lang="css">
 .task {
   @apply flex items-center flex-wrap shadow mb-2 py-2 px-2 rounded bg-white no-underline;
+  /* z-index: 99922222;
+  position: absolute;
+  margin-top: 20px;
+  width: 100%;
+  height: 100px; */
 }
 </style>

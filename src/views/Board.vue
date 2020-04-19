@@ -1,15 +1,13 @@
 <template>
   <div class="board bg-teal-700">
- 
     <div class="flex flex-row items-start">
-
       <BoardColumn
         v-for="(column, $columnIndex) of board.columns"
         :key="$columnIndex"
         :column="column"
         :columnIndex="$columnIndex"
         :board="board"
-      /> 
+      />
 
       <div class="column flex">
         <input
@@ -19,7 +17,7 @@
           v-model="newColumnName"
           @keyup.enter="createColumn"
         >
-      </div> 
+      </div>
     </div>
 
     <div
@@ -71,6 +69,7 @@ export default {
 
 .task-bg {
   @apply inset-0 absolute;
-  background: rgba(0,0,0,0.5);
+  background: rgba(0,0,0,0.5); 
+
 }
 </style>
