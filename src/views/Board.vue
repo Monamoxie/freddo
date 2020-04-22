@@ -69,7 +69,7 @@ export default {
 
 .task-bg {
   @apply inset-0 absolute;
-  background: rgba(0,0,0,0.5); 
+  background: rgba(0,0,0,0.5);
 
 }
 </style>
